@@ -1,0 +1,21 @@
+h1.page-title {
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 5px; 
+    color: azure; 
+    background-color: sienna;
+    border-bottom: 8px groove brown;
+    border-top: 8px groove lightcoral;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 10px 20px 30px indianred;
+}
+p.first-p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+p.second-p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
