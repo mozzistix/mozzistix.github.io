@@ -1,0 +1,294 @@
+body {
+    background-color: lightyellow;
+}
+
+.page {
+    margin: auto;
+    margin-top: 5%;
+    width: 60%;
+    height: 100%;
+}
+
+.page-header {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 119);
+}
+
+.logo {
+    /* border: 2px solid red; */
+    width: 33%;
+    max-width: 150px;
+    max-height: 150px;
+    height: 95%;
+    float: left;
+    border-radius: 10px;
+    animation: logo 3s infinite;
+    
+}
+
+@keyframes logo {
+    0% {transform: scale(0);}
+    100% {
+        transform: scale(1);
+    }
+}
+
+.logo>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.maintitle {
+    /* border: 2px solid blue; */
+    width: 65%;
+    height: 45%;
+    float: left;
+    animation: maintitle 3s infinite;
+}
+
+@keyframes maintitle {
+    0% { margin-top: -100px;}
+    /* 100% {} */
+}
+
+.subtitle {
+    /* border: 2px solid green; */
+    width: 65%;
+    height: 45%;
+    float: left;
+    animation: subtitle 3s infinite;
+}
+
+@keyframes subtitle {
+    0% { margin-top: -100px;}
+    /* 100% {} */
+}
+
+.page-content {
+    width: 100%;
+    background-color: rgb(255, 255, 182);
+}
+
+.frame {
+    /* border: 2px solid black; */
+    height: 450px;
+    overflow: hidden;
+}
+
+.slidewrapper {
+    height: 100%;
+    width: 400%;
+    animation: slideshow 12s infinite;
+}
+  
+.slidewrapper>div {
+    width: 25%;
+    float: left;
+    height: 100%;
+}
+
+.slideshow-img {
+    position: relative;
+}
+
+.slideshow-img>.div1 {
+    position: absolute;
+    padding: 10px;
+    bottom: 30%;
+    width: 40%;
+    left: 5%;
+    background-color: rgba(205, 205, 205, 0.8);
+    border: 2px solid white;
+}
+
+.slideshow-img>.div2 {
+    position: absolute;
+    color: white;
+    bottom: 60%;
+    width: 20%;
+    left: 5%;
+    padding: 30px;
+    background-color: rgba(205, 205, 205, 0.25);
+    border: 2px solid yellow;
+}
+@keyframes slideshow {
+    0% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: 0%;
+    }
+    33% {
+      margin-left: -100%;
+    }
+    58% {
+        margin-left: -100%;
+    }
+    66% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: -200%;
+    }
+  }
+
+.items-header {
+    width: 90%;
+    margin: auto;
+}
+
+.items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+}
+
+.items>div{
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    /* background-size: cover; */
+    /* border-radius: 10px; */
+}
+
+
+
+
+
+.openmdl {
+    background-color: BLACK;
+    color: white;
+    border-radius: 5px;
+    width: 33%;
+    font-size: x-small;
+    margin: auto;
+    /* border-color:black; */
+    /* border-style: solid; */
+    /* border-width: 2px; */
+    /* padding: 1.5%; */
+    padding: 5px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    text-decoration: none;
+    display: block;
+}
+
+.openmdl:hover {
+    background-color: gray;
+}
+
+.openmdl:visited {
+    /* background-color: BLACK; */
+    color: white;
+}
+
+.mdl {
+    opacity: 0;
+    /* no hover on hidden links */
+    pointer-events: none; 
+    background-color: rgba(223, 223, 223, 0.8);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.mdl-content {
+    background-color: white;
+    width: 50%;
+    height: 40%;
+    margin: auto;
+    border-radius: 5px;
+    /* padding: 2%; */
+    margin-top: 20%;
+    text-align: center;
+}
+
+.mdl-caption {
+    background-color: gainsboro;
+    padding: 10px;
+}
+
+.mdl:target{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mdl-content-header {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    background-color: gold;
+    padding: 20px;
+    /* font-weight: bolder; */
+    font-size: x-large;
+    color: black;
+    /* display: block; */
+    /* width: 100%; */
+}
+
+.mdl-content-div {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 33% 66%;
+    padding: 5px;
+    color:black;
+    margin: 50px;
+}
+
+.mdl-close {
+    background-color: black;
+    color: black;
+    /* font-size: x-large; */
+    /* text-align: right; */
+    border-radius: 50px;
+    /* display: block; */
+    /* border: 1px solid red; */
+}
+
+.mdl-close>a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.mdl-close:hover {
+    background-color: gray;
+}
+
+
+
+
+
+.page-footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.footer-links {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+}
+
+.footer-links>div>a:link, a:visited {
+    text-decoration: none;
+    font-size: smaller;
+    color: white;
+ }
+
+ .footer-icons {
+    display: block;
+    height: 100px;
+    text-align: right;
+    padding: 10px;
+ }
+
