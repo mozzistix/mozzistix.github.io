@@ -1,0 +1,129 @@
+.multiple-choice{
+    width: 80%;
+    margin: 1%;
+}
+
+.eleven-fourteen {
+    width: 80%;
+    margin: 1%;
+}
+
+
+.herobox {
+    position: relative;
+    height: 500px;
+    background-color: rgba(132, 232, 60, 0.5);
+    background-image: url(images/nyc.jpg);
+    background-size: 100% 100%;
+}
+
+.herobox>div {
+    position: absolute;
+    width: 40%;
+    bottom: 50%;
+    right: 0;
+    left: 50%;
+    background-color: rgba(235, 235, 235, 0.6);
+    padding: 10px;
+}
+
+.herobox>.sub1 {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    height: 50px;
+    left: 0;
+    background-color: rgba(219, 82, 112, 0);
+}
+
+.herobox>.herobox-dropdown {
+    float: right;
+    position: absolute;
+    left: 80%;
+    top: 0;
+    right: 0;
+    background-color: rgba(219, 82, 112, 0);
+}
+
+.imageframe {
+    /* border: 2px solid black; */
+    height: 300px;
+    width: 300px;
+    position: relative;
+  }
+  
+  .imageframe>div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-animation: imagefade 8s infinite;
+    animation: imagefade 8s infinite;
+  }
+  
+  @-webkit-keyframes imagefade {
+      0% {opacity: 1;}
+      15% {opacity: 1;}
+      25% {opacity: 0;}
+      90% {opacity: 0;}
+      100% {opacity: 1;}
+  }
+  
+  @keyframes imagefade {
+      0% {opacity: 1;}
+      15% {opacity: 1;}
+      25% {opacity: 0;}
+      90% {opacity: 0;}
+      100% {opacity: 1;}
+  }
+  
+  .thirteen-gradient {
+    height: 500px;
+    background-image: linear-gradient(to top right, orange , lightgreen);
+  }
+
+  .thirteen-gradient>.imageframe {
+    position: relative;
+    width: 20%;
+    height: 20%;
+    /* animation-name: movetitle; */
+    /* animation-duration: 15s; */
+    animation: movetitle 10s infinite;
+  }
+
+  @keyframes movetitle {
+    0% {
+        left: 30%; 
+        top: 44%;
+        /* border: 2px solid ghostwhite; */
+        /* border-radius: 50%; */
+    }
+    30% {
+        left: 60%;
+        top: 44%;
+        /* border: 4px solid ghostwhite; */
+        transform: rotate(90deg);
+
+    }
+    75% {
+        left: 10%;
+        top: 10%;
+        transform: rotate(-90deg);
+        /* border: 0px solid ghostwhite; */
+    }
+}
+
+.sixteen {
+    background-image: linear-gradient(to right, lightgreen, pink);
+    height: 500px;
+    text-align: center;
+}
+.column {
+    height: 100%;
+    width: 100%;
+}
+.column:hover{
+    background-color: rgba(105, 105, 105, 0.5);
+ }
+ 

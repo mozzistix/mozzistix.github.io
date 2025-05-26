@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="final.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <!-- https://getbootstrap.com/docs/5.3/getting-started/download/#cdn-via-jsdelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!-- had to import specific like this for dropdown to work -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Popper.js (required for Bootstrap dropdowns) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <!-- Bootstrap's JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <div class="multiple-choice">
+        <h1>Multiple Choice</h1>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item">A, D</li>
+            <li class="list-group-item">A, D, E, F</li>
+            <li class="list-group-item">C is logically structured</li>
+            <li class="list-group-item">D, F</li>
+            <li class="list-group-item">B, E</li>
+            <li class="list-group-item">A, B, C, D, E, F</li>
+            <li class="list-group-item">A</li>
+            <li class="list-group-item">B</li>
+            <li class="list-group-item">B</li>
+            <li class="list-group-item">D</li>
+        </ul>
+    </div>
+
+    <div class="eleven-fourteen">
+        <h1>11</h1>
+        <div class="herobox" style="background-image: url(images/nyc.jpg);">
+            <div>
+                <h1>New York City</h1>
+                <a href="">Explore Events</a>    
+            </div>
+            <div class="sub1">
+                <h2>Studio</h2>
+            </div>
+            <div class="herobox-dropdown" >
+                <nav class="navbar navbar-expand-lg nav-pills">
+                    <ul class="navbar-nav">
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DROPDOWN</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Shirt</a>
+                                <a class="dropdown-item" href="#">Pants</a>
+                            </div>
+                        </li>
+                    </ul>    
+                </nav>
+            </div>
+        </div>
+
+        <h1>12</h1>
+        <div class="imageframe">
+            <div style="background-image: url('images/soccerball.jpg'); animation-delay: 0s;"></div>
+            <div style="background-image: url('images/basketball.jpeg'); animation-delay: 2s;"></div>
+            <div style="background-image: url('images/football.png'); animation-delay: 4s;"></div>
+            <div style="background-image: url('images/tennisball.jpg'); animation-delay: 6s;"></div>
+        </div>    
+
+        <h1>13</h1>
+        <div class="thirteen-gradient">
+            <div class="imageframe">
+                <div style="background-image: url('images/soccerball.jpg'); animation-delay: 0s;"></div>
+                <div style="background-image: url('images/basketball.jpeg'); animation-delay: 2s;"></div>
+                <div style="background-image: url('images/football.png'); animation-delay: 4s;"></div>
+                <div style="background-image: url('images/tennisball.jpg'); animation-delay: 6s;"></div>
+            </div>
+        </div>
+
+        <h1>14</h1>
+        <div class="row">
+            <div class="card col-sm-6">
+                <h2>Title 1</h2>
+                <img src="images/football.png">
+                <button class="btn btn-info" data-bs-target="#orange" data-bs-toggle="modal">a button</button>
+
+            </div>
+            <div class="card col-sm-6">
+                <h2>Title 2</h2>
+                <img src="images/tennisball.jpg">
+                <button class="btn btn-info" data-bs-target="#orange" data-bs-toggle="modal">a button</button>
+            </div>
+        </div>
+
+        <h1>15</h1>
+        <div class="sixteen">
+            <div class="row" style="width: 100%; padding: 5%; margin: auto;">
+                <div class="card col-sm-2 border-danger" style="height: 400px; margin: 10px;">
+                    <div class="column">
+                        <img src="images/football.png" style="height: 33%; width: 100%;">
+                        <h2>Football</h2>
+                        <p>football description</p>
+                        <p><a href="">empty link1</a></p>
+                        <button class="btn btn-info" data-bs-target="#football" data-bs-toggle="modal">more info</button>
+                    </div>
+                </div>
+                <div class="card col-sm-2 border-danger" style="height: 400px; margin: 10px;">
+                    <div class="column">
+                        <img src="images/tennisball.jpg" style="height: 33%; width: 100%;">
+                        <h2>Tennis</h2>
+                        <p>tennis description</p>
+                        <p><a href="">empty link2</a></p>
+                        <button class="btn btn-danger" data-bs-target="#tennisball" data-bs-toggle="modal">more info</button>
+                    </div>
+                </div>
+                <div class="card col-sm-2 border-danger" style="height: 400px; margin: 10px;">
+                    <div class="column">
+                        <img src="images/soccerball.jpg" style="height: 33%; width: 100%;">
+                        <h2>Soccer</h2>
+                        <p>soccer description</p>
+                        <p><a href="">empty link3</a></p>
+                        <button class="btn btn-info" data-bs-target="#soccerball" data-bs-toggle="modal">more info</button>
+                    </div>
+                </div>
+                <div class="card col-sm-2 border-danger" style="height: 400px; margin: 10px;">
+                    <div class="column">
+                        <img src="images/basketball.jpeg" style="height: 33%; width: 100%;">
+                        <h2>Basket</h2>
+                        <p>basketball description</p>
+                        <p><a href="">empty link4</a></p>
+                        <button class="btn btn-danger" data-bs-target="#basketball" data-bs-toggle="modal">more info</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="orange" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <h1>modal for balls</h1>
+                        <p>balls description</p>
+                        <button data-bs-dismiss="modal">X</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="football" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <h1>football</h1>
+                        <img src="images/football.png">
+                        <p>football description</p>
+                        <button data-bs-dismiss="modal">X</button>
+                    </div>
+                </div>
+            </div>
+            <div id="basketball" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <h1>basketball</h1>
+                        <img src="images/basketball.jpeg">
+                        <p>basketball description</p>
+                        <button data-bs-dismiss="modal">X</button>
+                    </div>
+                </div>
+            </div>
+            <div id="soccerball" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <h1>soccer</h1>
+                        <img src="images/soccerball.jpg">
+                        <p>soccer description</p>
+                        <button data-bs-dismiss="modal">X</button>
+                    </div>
+                </div>
+            </div>
+            <div id="tennisball" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <h1>tennis</h1>
+                        <img src="images/tennisball.jpg">
+                        <p>tennis description</p>
+                        <button data-bs-dismiss="modal">X</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>16</h1>
+
+    </div>
+</body>
+</html>
